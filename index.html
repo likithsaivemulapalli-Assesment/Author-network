@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Author Network – Force Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Author Network (Force Layout)</h1>
+  </header>
+
+  <main class="wrap">
+    <section class="controls">
+      <label>Charge: <input id="charge" type="range" min="-300" max="0" value="-120"></label>
+      <label>Collision radius: <input id="collide" type="range" min="0" max="40" value="16"></label>
+      <label>Link strength: <input id="linkStrength" type="range" min="0" max="1" step="0.01" value="0.2"></label>
+    </section>
+
+    <section class="viz">
+      <svg id="chart" width="1100" height="700"></svg>
+      <div id="tooltip" class="tooltip" style="opacity:0;"></div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

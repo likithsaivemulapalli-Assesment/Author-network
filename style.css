@@ -1,0 +1,8 @@
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:0; }
+header { padding:12px 20px; border-bottom:1px solid #eee; }
+.wrap { display:grid; grid-template-columns:280px 1fr; gap:16px; padding:16px; }
+.controls label { display:block; margin:10px 0; font-size:14px; }
+.tooltip { position:absolute; pointer-events:none; background:#111; color:#fff; padding:8px 10px;
+  border-radius:8px; font-size:13px; box-shadow:0 4px 14px rgba(0,0,0,.2);}
+.node { stroke:#fff; stroke-width:1px; }
+.link { stroke:#999; stroke-opacity:.4; }
